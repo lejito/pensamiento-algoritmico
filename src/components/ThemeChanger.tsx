@@ -17,7 +17,7 @@ export function ThemeChanger() {
   return (
     <div className="fixed bottom-4 right-4 z-50">
       <button
-        className="p-3 bg-slate-700 dark:bg-slate-200 text-slate-200 dark:text-slate-700 dark:text-slate:700 rounded-2xl shadow-lg transition-all ease-in-out hover:-translate-y-1"
+        className="p-3 bg-slate-700 dark:bg-slate-200 text-slate-200 dark:text-slate-700 dark:text-slate:700 rounded-2xl shadow-lg border-none outline-none transition-all ease-in-out hover:-translate-y-1"
         onClick={handleThemeChange}
       >
         {theme === "light" ? (
