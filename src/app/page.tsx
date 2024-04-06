@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { SectionsList } from "@components/sections-list";
+import { SectionsList } from "@/components/SectionsList";
 
 export default function Home() {
   return (
-    <div className="pb-12 bg-slate-100 min-h-screen text-center">
-      <header className="pt-12 pb-10 px-8 md:px-20 bg-gradient-to-br from-slate-600 to-slate-950">
+    <div className="pb-12 bg-gradient-to-br from-slate-700 to-slate-950 min-h-screen text-center">
+      <header className="pt-12 px-8 md:px-20">
         <div className="mb-10 relative h-16 md:h-20 w-full">
           <Image
             src={"/logo_udemedellin_dark.png"}
@@ -39,7 +39,7 @@ export default function Home() {
           en el microcurrículo y bibliografía de la asignatura.
         </p>
       </header>
-      
+
       <SectionsList />
     </div>
   );

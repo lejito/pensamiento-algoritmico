@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { title } from "process";
 
 export function SectionsList() {
   const sections = [
@@ -9,7 +8,7 @@ export function SectionsList() {
       description:
         "Una breve introducción a la lógica de resolución de problemas.",
       image: "/1-introduccion.jpg",
-      href: "/ruta/introduccion",
+      href: "/ruta/introduccion/que-es-la-logica",
     },
     {
       title: "Algoritmos",
@@ -56,12 +55,12 @@ export function SectionsList() {
   ];
 
   return (
-    <ul className="flex flex-wrap w-full my-10 px-10 text-center justify-center">
+    <ul className="flex flex-wrap w-full my-10 pt-10 px-10 text-center justify-center bg-slate-100 dark:bg-transparent">
       {sections.map((section) => (
         <li key={sections.indexOf(section) + 1} className="flex basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 p-2">
           <Link
             href={section.href}
-            className="flex flex-col bg-white rounded-md hover:-translate-y-1 hover:shadow-lg transition-all items-center p-4"
+            className="flex flex-col bg-white dark:bg-slate-700 dark:text-white rounded-md hover:-translate-y-1 hover:shadow-lg transition-all items-center p-4"
           >
             <div className="relative h-60 w-full">
               <Image
@@ -72,7 +71,7 @@ export function SectionsList() {
               />
             </div>
             <h2 className="my-2 text-xl font-medium">{section.title}</h2>
-            <p className="text-slate-500">{section.description}</p>
+            <p className="text-slate-500 dark:text-slate-400">{section.description}</p>
           </Link>
         </li>
       ))}

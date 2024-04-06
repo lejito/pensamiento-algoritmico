@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import { ThemeChanger } from "@/components/ThemeChanger";
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
@@ -32,8 +34,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={redHatDisplay.className}>{children}</body>
+    <html lang="es" suppressHydrationWarning>
+      <head />
+      <body className={`${redHatDisplay.className} bg-slate-100 antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          {children}
+          <ThemeChanger />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
