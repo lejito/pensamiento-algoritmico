@@ -55,7 +55,7 @@ export function SectionsList() {
   ];
 
   return (
-    <ul className="flex flex-wrap w-full my-10 px-10 py-10 text-center justify-center bg-slate-100 dark:bg-transparent">
+    <ul className="flex flex-wrap w-full py-16 px-10 text-center justify-center bg-slate-100 dark:bg-transparent">
       {sections.map((section) => (
         <li key={sections.indexOf(section) + 1} className="flex basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 p-2">
           <Link
