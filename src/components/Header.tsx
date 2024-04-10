@@ -1,15 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full h-[4.4rem] p-2 flex-none backdrop-blur transition-colors duration-500 bg-slate-100/75 dark:bg-slate-900/75 border-b border-slate-300 dark:border-slate-700">
       <nav className="mx-auto h-full flex justify-between items-center align-middle px-4">
         <div>
-          <a className="text-lg font-semibold" href="/">
+          <Link className="text-base sm:text-lg font-semibold" href="/">
             <h1 className="text-transparent font-bold bg-clip-text bg-gradient-to-br from-slate-600 to-slate-950 dark:from-slate-50 dark:to-slate-300">
               Pensamiento Algorítmico
             </h1>
-          </a>
+          </Link>
         </div>
         <div className="flex gap-2">
           <a
