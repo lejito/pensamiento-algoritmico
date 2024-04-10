@@ -11,9 +11,7 @@ export function SectionsList() {
           className="flex basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 p-2"
         >
           <Link
-            href={
-              "/ruta" + section.href + (section.pages && section.pages[0]?.href)
-            }
+            href={section.href + (section.pages ? section.pages[0]?.href : "")}
             className="flex flex-col bg-white dark:bg-slate-700 dark:text-white rounded-md hover:-translate-y-1 hover:shadow-lg transition-all items-center p-4"
           >
             <div className="relative h-60 w-full">

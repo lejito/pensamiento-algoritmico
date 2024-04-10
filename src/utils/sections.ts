@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const sections = [
   {
     title: "Introducción",
@@ -23,7 +21,7 @@ export const sections = [
       {
         title: "Métodos de solución de problemas",
         href: "/metodos-de-solucion-de-problemas",
-      }
+      },
     ],
   },
   {
@@ -31,7 +29,7 @@ export const sections = [
     description:
       "Conceptos básicos de los algoritmos y el paso a paso para implementarlos.",
     image: "/2-algoritmos.jpg",
-    href: "/ruta/algoritmos",
+    href: "/algoritmos",
     pages: [
       {
         title: "¿Qué es un algoritmo?",
@@ -52,7 +50,7 @@ export const sections = [
       {
         title: "Medios de expresión de un algoritmo",
         href: "/medios-de-expresion-de-un-algoritmo",
-      }
+      },
     ],
   },
   {
@@ -60,34 +58,34 @@ export const sections = [
     description:
       "Cómo se estructuran los programas, su ciclo de vida y una pequeña introducción a los lenguajes de programación.",
     image: "/3-programas.jpg",
-    href: "/ruta/programas",
+    href: "/programas",
   },
   {
     title: "Herramientas de programación",
     description:
       "Los tipos de datos, identificadores, operadores y expresiones principales y cómo se utilizan en Python.",
     image: "/4-herramientas-de-programacion.jpg",
-    href: "/ruta/herramientas-de-programacion",
+    href: "/herramientas-de-programacion",
   },
   {
     title: "Estructuras de control",
     description:
       "Estructuras de control de flujo como las secuenciales, condicionales y repetitivas",
     image: "/5-estructuras-de-control.jpg",
-    href: "/ruta/estructuras-de-control",
+    href: "/estructuras-de-control",
   },
   {
     title: "Modularidad y funciones",
     description:
       "La modularidad y las funciones como herramientas para organizar y reutilizar código.",
     image: "/6-modularidad-y-funciones.jpg",
-    href: "/ruta/modularidad-y-funciones",
+    href: "/modularidad-y-funciones",
   },
   {
     title: "Arreglos",
     description:
       "Los arreglos, tipos de arreglos y formas de operar con ellos.",
     image: "/7-arreglos.jpg",
-    href: "/ruta/arreglos",
+    href: "/arreglos",
   },
 ];
