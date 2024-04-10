@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Header />
       <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 min-w-screen min-h-screen">
         <Aside />
-        <main className="lg:pl-80 pt-10">
+        <main className="p-2 lg:pl-80 pt-10">
           {children}
         </main>
       </div>
