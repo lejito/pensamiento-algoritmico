@@ -3,11 +3,11 @@ import { sections } from "@/utils/sections";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function Aside() {
+export function AsideMobile() {
   const pathname = usePathname();
 
   return (
-    <aside className="hidden lg:block fixed z-20 inset-0 top-16 w-80 pt-6 pb-10 pl-10 pr-6 overflow-y-auto border-r border-slate-300 dark:border-slate-700">
+    <aside className="block lg:hidden fixed z-40 w-auto max-w-[75%] h-[calc(100%-4.4rem)] pt-6 pb-10 pl-10 pr-6 overflow-y-auto backdrop-blur transition-colors duration-500 bg-slate-100/80 dark:bg-slate-900/80 border-r border-slate-300 dark:border-slate-700">
       <nav className="relative">
         <ul className="pt-">
           {sections.map((section) => (
