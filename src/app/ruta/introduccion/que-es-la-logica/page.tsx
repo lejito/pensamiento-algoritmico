@@ -10,7 +10,7 @@ export default function QueEsLaLogicaPage() {
     <div>
       <header id="header" className="relative z-20 h-[100rem]">
         <div>
-          <p className="mb-2 text-sm leading-6 font-semibold text-sky-500 dark:text-sky-400">
+          <p className="mb-2 text-sm sm:text-base leading-6 font-semibold text-sky-500 dark:text-sky-400">
             Introducción
           </p>
           <div className="flex items-center">
@@ -19,7 +19,7 @@ export default function QueEsLaLogicaPage() {
             </h1>
           </div>
         </div>
-        <div className="mt-2 text-sm sm:text-lg text-slate-800 dark:text-slate-300">
+        <div className="mt-2 text-base sm:text-lg text-slate-800 dark:text-slate-300">
           <p>
             Antes de comenzar a resolver problemas e implementar algoritmos, es
             importante entender qué es la lógica y cómo se aplica en la

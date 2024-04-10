@@ -17,11 +17,11 @@ export function Blockquote({ children }: { children: React.ReactNode }) {
         <path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" />
       </svg>
       <blockquote>
-        <p className="text-lg not-italic font-normal">&quot;{children}&quot;</p>
+        <p className="text-base sm:text-lg not-italic font-normal">&quot;{children}&quot;</p>
       </blockquote>
       <figcaption className="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
         <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700 italic">
-          <cite className="pe-3 text-sm sm:text-lg font-medium">
+          <cite className="pe-3 text-sm sm:text-base font-medium">
             Enciclopedia Significados
           </cite>
           <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
