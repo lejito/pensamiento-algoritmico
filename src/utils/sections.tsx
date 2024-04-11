@@ -40,7 +40,7 @@ export const sections: Section[] = [
             <p>
               Antes de comenzar a resolver problemas e implementar algoritmos,
               es importante entender qué es la lógica y cómo se aplica en la
-              resolución de problemas.
+              resolución de problemas. Una definición simple de lógica es:
             </p>
 
             <Blockquote
@@ -52,6 +52,17 @@ export const sections: Section[] = [
               razonamientos) para establecer leyes y principios válidos con el
               objetivo de obtener criterios de verdad.
             </Blockquote>
+
+            <p className="mb-8">
+              En palabras más sencillas, la lógica es la manera más{" "}
+              <strong>fácil</strong> y <strong>obvia</strong> de hacer cualquier
+              cosa. La lógica se aplica en la resolución de problemas a través
+              de la identificación de problemas, la formulación de hipótesis y
+              soluciones, la evaluación de alternativas y la toma de decisiones
+              basadas en la información disponible.
+            </p>
+
+            <p></p>
           </>
         ),
       },
