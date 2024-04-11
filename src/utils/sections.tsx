@@ -1,5 +1,5 @@
-import { Blockquote } from "@/components/Blockquote";
 import React from "react";
+import { Blockquote } from "@/components/Blockquote";
 
 export interface Topic {
   id: string;
@@ -25,8 +25,9 @@ export const sections: Section[] = [
     image: "/1-introduccion.jpg",
     content: (
       <p>
-        Una introducción a la lógica de resolución de problemas y los conceptos
-        básicos del pensamiento algorítmico.
+        Una pequeña introducción a la lógica de resolución de problemas y
+        algunos conceptos básicos importantes para comenzar a resolver problemas
+        de forma efectiva y luego aplicarlos en la implementación de algoritmos.
       </p>
     ),
     topics: [
@@ -42,7 +43,10 @@ export const sections: Section[] = [
               resolución de problemas.
             </p>
 
-            <Blockquote>
+            <Blockquote
+              author="Enciclopedia Significados"
+              url="https://www.significados.com/logica/"
+            >
               La lógica es una ciencia formal que estudia la estructura o formas
               del pensamiento humano (como proposiciones, conceptos y
               razonamientos) para establecer leyes y principios válidos con el

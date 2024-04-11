@@ -11,7 +11,7 @@ export function Aside() {
       <nav className="relative">
         <ul className="pt-4">
           {sections.map((section) => (
-            <li key={sections.indexOf(section) + 1} className="pb-5">
+            <li key={section.id} className="pb-5">
               <Link
                 href={`/${section.id}`}
                 className={`mb-4 font-semibold text-lg leading-5 text-slate-950 dark:text-slate-50 ${
@@ -23,7 +23,7 @@ export function Aside() {
               <ul>
                 {section.topics &&
                   section.topics.map((topic) => (
-                    <li key={section.topics.indexOf(topic) + 1}>
+                    <li key={topic.id}>
                       <Link
                         href={`/${section.id}/${topic.id}`}
                         className={`block py-2 px-6 my-2 transition-colors border-l duration-300 ${
