@@ -1,4 +1,4 @@
-export function Blockquote({ children }: { children: React.ReactNode }) {
+export function Blockquote({ children,  }: { children: React.ReactNode }) {
   return (
     <figure className="max-w-screen-md mx-auto my-6 text-center">
       <svg

@@ -21,18 +21,18 @@ export function AsideMobile() {
                 <h2>{section.title}</h2>
               </Link>
               <ul>
-                {section.pages &&
-                  section.pages.map((page) => (
-                    <li key={section.pages.indexOf(page) + 1}>
+                {section.topics &&
+                  section.topics.map((topic) => (
+                    <li key={section.topics.indexOf(topic) + 1}>
                       <Link
-                        href={section.href + page.href}
+                        href={section.href + topic.href}
                         className={`block py-2 px-6 my-2 transition-colors border-l duration-300 ${
-                          pathname === section.href + page.href
+                          pathname === section.href + topic.href
                             ? "border-slate-700 text-slate-950 dark:border-slate-200 dark:text-slate-200"
                             : "border-slate-300 text-slate-400 dark:border-slate-500 dark:text-slate-500 hover:border-slate-500 hover:text-slate-600 dark:hover:border-slate-400 dark:hover:text-slate-400"
                         }`}
                       >
-                        {page.title}
+                        {topic.title}
                       </Link>
                     </li>
                   ))}
