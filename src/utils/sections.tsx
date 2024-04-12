@@ -1,5 +1,6 @@
 import React from "react";
 import { Blockquote } from "@/components/Blockquote";
+import { Video } from "@/components/VideoEmbeded";
 
 export interface Topic {
   id: string;
@@ -63,6 +64,15 @@ export const sections: Section[] = [
             </p>
 
             <p></p>
+
+            <p>Repasa y apoyate del siguiente video para afianzar conceptos y tus conocimientos </p>
+
+            <p></p>
+
+
+            <Video videoId="EjV2LxEdz0c" />
+
+            <p className="mt-4"></p>
           </>
         ),
       },
