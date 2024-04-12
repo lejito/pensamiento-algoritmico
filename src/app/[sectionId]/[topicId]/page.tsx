@@ -4,7 +4,6 @@ import { sections } from "@/utils/sections";
 import NotFoundPage from "@/app/not-found";
 import { PageBody } from "@/components/PageBody";
 import { PageHeader } from "@/components/PageHeader";
-import { Blockquote } from "@/components/Blockquote";
 
 export default function TopicPage() {
   const { sectionId, topicId } = useParams<{

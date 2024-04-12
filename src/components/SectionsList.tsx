@@ -12,7 +12,7 @@ export function SectionsList() {
         >
           <Link
             href={`/${section.id}`}
-            className="flex flex-col bg-white dark:bg-slate-700 dark:text-white rounded-md hover:-translate-y-1 hover:shadow-lg transition-all items-center p-4"
+            className="flex flex-col bg-white dark:bg-slate-700 dark:text-white rounded-md border border-slate-300 dark:border-slate-600 hover:-translate-y-1 shadow-lg hover:shadow-xl transition-all items-center p-4"
           >
             <div className="relative h-60 w-full">
               <Image

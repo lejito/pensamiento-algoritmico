@@ -4,7 +4,6 @@ import { sections } from "@/utils/sections";
 import NotFoundPage from "../not-found";
 import { PageBody } from "@/components/PageBody";
 import { PageHeader } from "@/components/PageHeader";
-import Link from "next/link";
 import { TopicsList } from "@/components/TopicsList";
 
 export default function SectionPage() {

@@ -34,9 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning={true}>
       <head />
-      <body className={`${redHatDisplay.className} bg-slate-100 antialiased`} suppressHydrationWarning={true}>
+      <body
+        className={`${redHatDisplay.className} bg-slate-100 antialiased`}
+        suppressHydrationWarning={true}
+      >
         <ThemeProvider attribute="class" defaultTheme="system">
           {children}
           <ThemeChanger />

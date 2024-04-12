@@ -53,7 +53,7 @@ export const sections: Section[] = [
               objetivo de obtener criterios de verdad.
             </Blockquote>
 
-            <p className="mb-8">
+            <p className="">
               En palabras más sencillas, la lógica es la manera más{" "}
               <strong>fácil</strong> y <strong>obvia</strong> de hacer cualquier
               cosa. La lógica se aplica en la resolución de problemas a través
@@ -62,7 +62,16 @@ export const sections: Section[] = [
               basadas en la información disponible.
             </p>
 
-            <p></p>
+            <div className="my-8 p-6 flex flex-col max-w-xl mx-auto items-center border rounded-lg border-slate-300 dark:border-slate-700">
+              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-4">
+                Ejercicio 1
+              </h3>
+              <p>
+                Observa una serie de operaciones o números y trata de
+                identificar la lógica detrás de ellos. Por ejemplo, ¿qué patrón
+                sigue esta secuencia? 2, 4, 8, 16, …
+              </p>
+            </div>
           </>
         ),
       },

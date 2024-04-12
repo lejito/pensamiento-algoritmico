@@ -3,7 +3,7 @@ import { SectionsList } from "@/components/SectionsList";
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-slate-700 to-slate-950 text-center">
+    <div className="bg-gradient-to-br from-slate-800 to-slate-950 text-center">
       <header className="py-12 px-8 md:px-20">
         <div className="mb-10 relative h-16 md:h-20 w-full">
           <Image

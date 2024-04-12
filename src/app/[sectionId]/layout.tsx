@@ -3,7 +3,7 @@ import { Aside } from "@/components/Aside";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-slate-100 dark:bg-gradient-to-r dark:from-slate-900 dark:to-slate-800">
+    <div className="bg-slate-100 dark:bg-slate-900">
       <Header />
       <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 min-w-screen min-h-[calc(100vh-4.4rem)]">
         <Aside />
