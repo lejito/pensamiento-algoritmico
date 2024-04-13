@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function TopicsList({ section }: { section: Section }) {
   return (
-    <ul className="flex flex-wrap w-full pt-8 pb-16 px-10 text-center justify-center bg-slate-100 dark:bg-transparent">
+    <ul className="flex flex-wrap w-full pt-8 pb-16 px-10 text-center justify-center">
       {section.topics.map((topic) => (
         <li
           key={topic.id}

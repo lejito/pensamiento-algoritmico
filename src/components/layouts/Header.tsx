@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full h-[4.4rem] p-2 flex-none backdrop-blur transition-colors duration-500 bg-slate-100/80 dark:bg-slate-900/80 border-b border-slate-300 dark:border-slate-700">
+      <header className="sticky top-0 z-40 w-full h-[4.4rem] p-2 flex-none backdrop-blur transition-colors duration-500 bg-slate-200/80 dark:bg-slate-900/80 border-b border-slate-300 dark:border-slate-700">
         <nav className="mx-auto h-full flex justify-between items-center align-middle px-4">
           <div className="flex items-center">
             <button onClick={toggleMenu} className="block lg:hidden">
