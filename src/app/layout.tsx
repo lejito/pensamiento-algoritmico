@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { ThemeChanger } from "@/components/ThemeChanger";
+import { ThemeChanger } from "@/components/layouts/ThemeChanger";
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 

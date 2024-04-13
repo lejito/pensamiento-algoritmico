@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SectionsList } from "@/components/SectionsList";
+import { SectionsList } from "@/components/layouts/SectionsList";
 
 export default function Home() {
   return (

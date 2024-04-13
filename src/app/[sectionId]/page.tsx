@@ -2,9 +2,9 @@
 import { useParams } from "next/navigation";
 import { sections } from "@/utils/sections";
 import NotFoundPage from "../not-found";
-import { PageBody } from "@/components/PageBody";
-import { PageHeader } from "@/components/PageHeader";
-import { TopicsList } from "@/components/TopicsList";
+import { PageBody } from "@/components/layouts/PageBody";
+import { PageHeader } from "@/components/layouts/PageHeader";
+import { TopicsList } from "@/components/layouts/TopicsList";
 
 export default function SectionPage() {
   const { sectionId } = useParams<{ sectionId: string }>();

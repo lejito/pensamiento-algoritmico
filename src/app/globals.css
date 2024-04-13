@@ -8,7 +8,6 @@
 
 *::-webkit-scrollbar-track {
   background: rgb(212 212 216);
-
 }
 
 *::-webkit-scrollbar-thumb {
@@ -37,4 +36,22 @@
 
 .dark *::-webkit-scrollbar-thumb:active {
   background: rgb(94, 94, 97);
+}
+
+.question-feedback-enter {
+  opacity: 0;
+}
+
+.question-feedback-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.question-feedback-exit {
+  opacity: 1;
+}
+
+.question-feedback-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }

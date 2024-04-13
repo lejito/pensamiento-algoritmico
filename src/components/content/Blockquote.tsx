@@ -18,23 +18,23 @@ export function Blockquote({
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-10 h-10 mx-auto mb-2 text-gray-400"
+        className="w-10 h-10 mx-auto mb-2 text-sky-600 dark:text-sky-500"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
         <path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" />
         <path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5" />
       </svg>
       <blockquote>
-        <p className="text-base sm:text-lg not-italic font-normal text-gray-700 dark:text-gray-300">
+        <p className="text-base sm:text-lg not-italic font-normal">
           &quot;{children}&quot;
         </p>
       </blockquote>
       <figcaption className="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
         <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700 italic">
-          <cite className="pe-4 text-sm sm:text-base font-medium">
+          <cite className="pe-4 text-sm sm:text-base font-medium text-gray-800 dark:text-gray-200">
             {author}
           </cite>
-          <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+          <cite className="ps-3 text-sm text-sky-700 dark:text-sky-600">
             <a href={url} target="_blank" className="hover:underline">
               {url}
             </a>
