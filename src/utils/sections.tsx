@@ -248,7 +248,7 @@ export const sections: Section[] = [
               </p>
 
               <Question
-                id="s1t1q3"
+                id="s1t2q1"
                 type="one-choice"
                 title="Definición de un problema"
                 question="¿Cuál de las siguientes opciones describe mejor lo que es un problema en el contexto de la resolución de problemas?"
