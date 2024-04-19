@@ -84,7 +84,7 @@ export const queEsLaLogica: Topic = {
           coherente de las instrucciones necesarias para ejecutar con éxito un
           programa.
         </Blockquote>
-
+        
         <p>
           Piensa en cómo se resuelve un problema en la vida real. Si tienes que
           ir a comprar algo, primero piensas en qué necesitas, luego decides a
