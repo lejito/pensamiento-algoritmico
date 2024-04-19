@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning={true}>
       <head />
       <body
-        className={`${redHatDisplay.className} bg-slate-100 antialiased`}
+        className={`${redHatDisplay.className} bg-slate-100 antialiased min-w-screen min-h-screen`}
         suppressHydrationWarning={true}
       >
         <ThemeProvider attribute="class" defaultTheme="system">

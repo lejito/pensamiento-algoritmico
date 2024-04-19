@@ -1,4 +1,4 @@
-import { Section } from "@/utils/sections";
+import { Section } from "@/utils/models/Section";
 import Link from "next/link";
 
 export function TopicsList({ section }: { section: Section }) {

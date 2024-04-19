@@ -1,5 +1,5 @@
 "use client";
-import { sections } from "@/utils/sections";
+import { structure } from "@/utils/structure";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,7 +10,7 @@ export function Aside() {
     <aside className="hidden lg:block fixed z-40 inset-0 top-[4.4rem] w-80 pt-6 pb-10 pl-10 pr-6 overflow-y-auto border-r border-slate-300 dark:border-slate-700">
       <nav className="relative">
         <ul className="pt-4">
-          {sections.map((section) => (
+          {structure.map((section) => (
             <li key={section.id} className="pb-5">
               <Link
                 href={`/${section.id}`}

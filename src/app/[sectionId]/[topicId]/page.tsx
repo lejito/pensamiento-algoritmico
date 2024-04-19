@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import { sections } from "@/utils/sections";
+import { structure } from "@/utils/structure";
 import NotFoundPage from "@/app/not-found";
 import { PageBody } from "@/components/layouts/PageBody";
 import { PageHeader } from "@/components/layouts/PageHeader";
@@ -11,7 +11,7 @@ export default function TopicPage() {
     topicId: string;
   }>();
 
-  const section = sections.find((s) => s.id === sectionId);
+  const section = structure.find((s) => s.id === sectionId);
   const topic = section?.topics.find((t) => t.id === topicId);
 
   if (!section || !topic) {

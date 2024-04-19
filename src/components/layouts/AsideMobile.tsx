@@ -1,5 +1,5 @@
 "use client";
-import { sections } from "@/utils/sections";
+import { structure } from "@/utils/structure";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,7 +10,7 @@ export function AsideMobile() {
     <aside className="block lg:hidden fixed z-40 w-auto max-w-[75%] h-[calc(100%-4.4rem)] pt-6 pb-10 pl-10 pr-6 overflow-y-auto backdrop-blur transition-colors duration-500 bg-slate-100/80 dark:bg-slate-900/80 border-r border-slate-300 dark:border-slate-700">
       <nav className="relative">
         <ul className="pt-4">
-          {sections.map((section) => (
+          {structure.map((section) => (
             <li key={section.id} className="pb-5">
               <Link
                 href={`/${section.id}`}
