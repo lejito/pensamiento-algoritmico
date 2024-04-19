@@ -96,14 +96,14 @@ export function Question({
 
       <form
         className={`w-full flex justify-center items-center mt-4 text-base lg:text-lg ${
-          type === "one-choice" ? "flex-col" : "flex-row"
+          type === "one-choice" ? "flex-col" : "flex-col md:flex-row"
         }`}
         onSubmit={(e) => e.preventDefault()}
       >
         {type === "short-answer" && (
           <input
             type="text"
-            className="px-2 py-1 border rounded-lg border-slate-300 dark:border-slate-700 disabled:opacity-60 disabled:cursor-not-allowed"
+            className="px-2 py-1 mb-2 md:mb-0 border rounded-lg border-slate-300 dark:border-slate-700 disabled:opacity-60 disabled:cursor-not-allowed"
             placeholder="Respuesta"
             value={userAnswer}
             onChange={(e) => setUserAnswer(e.target.value)}

@@ -29,12 +29,12 @@ export function Blockquote({
           &quot;{children}&quot;
         </p>
       </blockquote>
-      <figcaption className="flex items-center justify-center mt-3 space-x-3 rtl:space-x-reverse">
-        <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700 italic">
-          <cite className="pe-4 text-sm sm:text-base font-medium text-gray-800 dark:text-gray-200">
+      <figcaption className="flex items-center justify-center mt-3 space-x-3">
+        <div className="flex flex-col md:flex-row items-center divide-y-2 md:divide-y-0 md:divide-x-2 divide-gray-300 dark:divide-gray-700 italic gap-2 md:gap-0">
+          <cite className="md:pe-4 text-sm sm:text-base font-medium text-gray-800 dark:text-gray-200">
             {author}
           </cite>
-          <cite className="ps-3 text-sm text-sky-700 dark:text-sky-600">
+          <cite className="md:ps-3 pt-1 md:pt-0 text-sm text-sky-700 dark:text-sky-600">
             <a href={url} target="_blank" className="hover:underline">
               {url}
             </a>
