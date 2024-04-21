@@ -3,6 +3,7 @@ import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { ThemeChanger } from "@/components/layouts/ThemeChanger";
+import Head from "next/head";
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
@@ -35,7 +36,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning={true}>
-      <head />
+      <Head>
+        <title>jajajaja</title>
+        <meta property="og:title" content="jajaajs" key="title" />
+      </Head>
       <body
         className={`${redHatDisplay.className} bg-slate-100 antialiased min-w-screen min-h-screen`}
         suppressHydrationWarning={true}

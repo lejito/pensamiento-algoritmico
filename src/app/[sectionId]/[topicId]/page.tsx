@@ -1,22 +1,26 @@
-"use client";
-import { useParams } from "next/navigation";
 import { structure } from "@/utils/structure";
 import NotFoundPage from "@/app/not-found";
 import { PageBody } from "@/components/layouts/PageBody";
 import { PageHeader } from "@/components/layouts/PageHeader";
+import { Metadata } from "next";
 
-export default function TopicPage() {
-  const { sectionId, topicId } = useParams<{
-    sectionId: string;
-    topicId: string;
-  }>();
+export const metadata: Metadata = {};
+
+export default function TopicPage({
+  params,
+}: {
+  params: { sectionId: string; topicId: string };
+}) {
+  const { sectionId, topicId } = params;
 
   const section = structure.find((s) => s.id === sectionId);
   const topic = section?.topics.find((t) => t.id === topicId);
 
   if (!section || !topic) {
-    return NotFoundPage();
+    return <NotFoundPage />;
   }
+
+  metadata.title = `${section.title}: ${topic.title} | Pensamiento Algorítmico`;
 
   return (
     <>
