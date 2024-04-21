@@ -1,3 +1,4 @@
+import { Video } from "@/components/content/Video";
 import { Topic } from "@/utils/models/Topic";
 import Image from "next/image";
 
@@ -103,6 +104,9 @@ export const solucionDeProblemas: Topic = {
           height={253}
           className="mx-auto py-10"
         />
+
+        <Video videoId="SDv2vOIFIj8">
+        </Video>
       </section>
     </>
   ),
