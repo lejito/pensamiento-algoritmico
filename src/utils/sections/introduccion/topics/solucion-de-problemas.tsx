@@ -102,11 +102,18 @@ export const solucionDeProblemas: Topic = {
           alt="Ciclo de solución de problemas"
           width={533}
           height={253}
-          className="mx-auto py-10"
+          className="mx-auto py-10 block dark:hidden"
         />
 
-        <Video videoId="SDv2vOIFIj8">
-        </Video>
+        <Image
+          src="/Ciclo-solucion-de-problemas_dark.png"
+          alt="Ciclo de solución de problemas"
+          width={533}
+          height={253}
+          className="mx-auto py-10 hidden dark:block"
+        />
+
+        <Video videoId="SDv2vOIFIj8"></Video>
       </section>
     </>
   ),
