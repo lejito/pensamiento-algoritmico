@@ -1,8 +1,12 @@
 import { Topic } from "@/utils/models/Topic";
 
 export const queEsUnAlgoritmo: Topic = {
-  id: "que-es-la-logica",
-  title: "¿Qué es la lógica?",
-  description: "Conceptos básicos de la lógica y su aplicación.",
-  content: <p>Contenido</p>,
+  id: "que-es-un-algoritmo",
+  title: "¿Qué es un algoritmo?",
+  description: "Definición básica de qué es un algoritmo.",
+  content: (
+    <>
+
+    </>
+  ),
 };

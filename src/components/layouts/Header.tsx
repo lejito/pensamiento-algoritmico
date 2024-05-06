@@ -51,15 +51,15 @@ export function Header() {
                 className="block dark:hidden"
                 src="/logo_udemedellin.png"
                 alt="Logo UdeMedellín"
-                width={120.75}
-                height={37.5}
+                width={476/3.3}
+                height={132/3.3}
               />
               <Image
                 className="hidden dark:block"
                 src="/logo_udemedellin_dark.png"
                 alt="Logo UdeMedellín"
-                width={120.75}
-                height={37.5}
+                width={402/3}
+                height={119/3}
               />
             </a>
           </div>
