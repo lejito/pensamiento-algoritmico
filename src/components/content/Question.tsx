@@ -22,14 +22,12 @@ export function Question({
   feedback: string;
 }) {
   const nodeRef = useRef(null);
-  const [showFeedback, setShowFeedback] = useState(false);
 
-  const [userAnswer, setUserAnswer] = useState("");
-  const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
-  const [answerChecked, setAnswerChecked] = useState(false);
-  const [orderedOptions, setOrderedOptions] = useState<string[] | null>(
-    options
-  );
+  const [showFeedback, setShowFeedback] = useState(() => false);
+  const [userAnswer, setUserAnswer] = useState(() => "");
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState(() => false);
+  const [answerChecked, setAnswerChecked] = useState(() => false);
+  const [finalOptions, setFinalOptions] = useState(() => options);
 
   const checkAnswer = () => {
     setIsAnswerCorrect(userAnswer === answer);
@@ -50,11 +48,11 @@ export function Question({
   };
 
   useEffect(() => {
-    if (options && randomizeOptions) {
+    if (type === "true-false") {
+      setFinalOptions(["Verdadero", "Falso"]);
+    } else if (options && randomizeOptions) {
       const shuffledOptions = options?.sort(() => Math.random() - 0.5);
-      if (shuffledOptions) {
-        setOrderedOptions(shuffledOptions);
-      }
+      setFinalOptions(shuffledOptions);
     }
 
     const storedQuestion = localStorage.getItem(id);
@@ -65,7 +63,7 @@ export function Question({
       setAnswerChecked(true);
       setShowFeedback(true);
     }
-  }, [id, options, randomizeOptions, answer]);
+  }, [id, options, randomizeOptions, answer, type]);
 
   return (
     <div className="relative my-8 p-6 flex flex-col max-w-xl mx-auto items-center border rounded-lg border-slate-300 dark:border-slate-700">
@@ -97,10 +95,13 @@ export function Question({
       </button>
 
       <form
+        id={id}
         name={id}
         onSubmit={(e) => e.preventDefault()}
         className={`w-full flex justify-center items-center mt-4 text-base lg:text-lg ${
-          type === "one-choice" ? "flex-col" : "flex-col md:flex-row"
+          type === "one-choice" || type === "true-false"
+            ? "flex-col"
+            : "flex-col md:flex-row"
         }`}
       >
         {type === "short-answer" && (
@@ -108,19 +109,20 @@ export function Question({
             type="text"
             className="px-2 py-1 mb-2 md:mb-0 border rounded-lg border-slate-300 dark:border-slate-700 disabled:opacity-60 disabled:cursor-not-allowed"
             placeholder="Respuesta"
+            name={id}
             value={userAnswer}
             onChange={(e) => setUserAnswer(e.target.value)}
             disabled={answerChecked}
           />
         )}
 
-        {type === "one-choice" && (
+        {(type === "one-choice" || type === "true-false") && (
           <ul className="w-full flex flex-row flex-wrap justify-center mb-3">
-            {orderedOptions?.map((option, index) => (
+            {finalOptions?.map((option, index) => (
               <li key={index} className="flex basis-full md:basis-1/2 p-2">
                 <input
                   type="radio"
-                  id={index.toString()}
+                  id={id + index}
                   name={id}
                   value={option}
                   checked={userAnswer === option}
@@ -129,7 +131,7 @@ export function Question({
                   className="hidden peer"
                 />
                 <label
-                  htmlFor={index.toString()}
+                  htmlFor={id + index}
                   className="flex items-center justify-center text-center w-full p-4 border rounded-lg border-slate-300 dark:border-slate-700 hover:scale-[1.05] transition-all peer-checked:shadow-md peer-checked:border-slate-500 peer-checked:dark:border-slate-300 cursor-pointer peer-disabled:opacity-60 peer-disabled:cursor-not-allowed peer-disabled:hover:scale-100 peer-disabled:hover:shadow-none"
                 >
                   {option}
@@ -152,6 +154,7 @@ export function Question({
         in={showFeedback}
         timeout={500}
         unmountOnExit
+        nodeRef={nodeRef}
       >
         <div ref={nodeRef} className="pt-2">
           <p
