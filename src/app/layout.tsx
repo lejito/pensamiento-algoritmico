@@ -37,8 +37,10 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning={true}>
       <Head>
-        <title>jajajaja</title>
-        <meta property="og:title" content="jajaajs" key="title" />
+        <meta
+          http-equiv="Permissions-Policy"
+          content="interest-cohort=()"
+        ></meta>
       </Head>
       <body
         className={`${redHatDisplay.className} bg-slate-100 antialiased min-w-screen min-h-screen`}

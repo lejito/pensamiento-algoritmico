@@ -27,7 +27,9 @@ export function Question({
   const [userAnswer, setUserAnswer] = useState("");
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
   const [answerChecked, setAnswerChecked] = useState(false);
-  const [orderedOptions, setOrderedOptions] = useState<string[] | null>(options);
+  const [orderedOptions, setOrderedOptions] = useState<string[] | null>(
+    options
+  );
 
   const checkAnswer = () => {
     setIsAnswerCorrect(userAnswer === answer);
@@ -95,10 +97,11 @@ export function Question({
       </button>
 
       <form
+        name={id}
+        onSubmit={(e) => e.preventDefault()}
         className={`w-full flex justify-center items-center mt-4 text-base lg:text-lg ${
           type === "one-choice" ? "flex-col" : "flex-col md:flex-row"
         }`}
-        onSubmit={(e) => e.preventDefault()}
       >
         {type === "short-answer" && (
           <input

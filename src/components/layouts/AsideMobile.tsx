@@ -14,7 +14,7 @@ export function AsideMobile() {
             <li key={section.id} className="pb-5">
               <Link
                 href={`/${section.id}`}
-                className={`mb-4 font-semibold text-lg leading-5 text-slate-950 dark:text-slate-50 ${
+                className={`mb-4 font-semibold text-lg leading-5 text-slate-950 dark:text-slate-50 hover:underline ${
                   pathname === `/${section.id}` ? "underline" : ""
                 }`}
               >

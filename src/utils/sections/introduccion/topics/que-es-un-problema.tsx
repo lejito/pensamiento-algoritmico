@@ -17,7 +17,7 @@ export const queEsUnProblema: Topic = {
         </p>
 
         <Blockquote
-          author="Enciclopedia Significados"
+          author="UNICEF"
           url="https://www.unicef.org/lac/misi%C3%B3n-4-resoluci%C3%B3n-de-problemas"
         >
           La habilidad de resolución de problemas se puede definir como la
@@ -46,7 +46,8 @@ export const queEsUnProblema: Topic = {
             "Una situación o cuestión que requiere una solución o respuesta.",
             "Una tarea que solo puede ser resuelta mediante la intuición.",
           ]}
-          feedback="Un problema si bien puede tener múltiples soluciones, y usa la lógica e intuición, en general es algo que requiere una solución o respuesta que satisfaga las condiciones planteadas en un enunciado ."
+          randomizeOptions={true}
+          feedback="Un problema si bien puede tener múltiples soluciones, y usa la lógica e intuición, en general es algo que requiere una solución o respuesta que satisfaga las condiciones planteadas en un enunciado."
         />
 
         <Video videoId="vpmi739bA14" />

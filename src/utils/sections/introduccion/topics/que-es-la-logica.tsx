@@ -3,6 +3,7 @@ import { Topic } from "@/utils/models/Topic";
 import { Blockquote } from "@/components/content/Blockquote";
 import { Question } from "@/components/content/Question";
 import { Video } from "@/components/content/Video";
+import { TextLink } from "@/components/content/TextLink";
 
 export const queEsLaLogica: Topic = {
   id: "que-es-la-logica",
@@ -84,7 +85,7 @@ export const queEsLaLogica: Topic = {
           coherente de las instrucciones necesarias para ejecutar con éxito un
           programa.
         </Blockquote>
-        
+
         <p>
           Piensa en cómo se resuelve un problema en la vida real. Si tienes que
           ir a comprar algo, primero piensas en qué necesitas, luego decides a
@@ -172,13 +173,10 @@ export const queEsLaLogica: Topic = {
           de forma estructurada, a descomponer problemas complejos en partes más
           pequeñas y manejables, y a desarrollar soluciones efectivas y
           eficientes. Repasa y apóyate del siguiente video de{" "}
-          <a
-            href="https://www.youtube.com/@academiaprogramacion"
-            target="_blank"
-            className="text-sky-500 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300 underline transition-all duration-200"
-          >
-            Academia de Programación
-          </a>{" "}
+          <TextLink
+            text="Academia de Programación"
+            link="https://www.youtube.com/@academiaprogramacion"
+          />{" "}
           para afianzar conceptos y conocimientos sobre la lógica de
           programación:
         </p>
