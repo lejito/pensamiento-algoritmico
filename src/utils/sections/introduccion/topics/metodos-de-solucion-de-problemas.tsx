@@ -114,7 +114,9 @@ export const metodosDeSolucionDeProblemas: Topic = {
         </p>
 
         <Video videoId="UiYXwUg23Yw"></Video> 
+        <p className="mt-5">Preparate para la siguiente sección con el siguiente video:
 
+        </p>
         <Video videoId="U3CGMyjzlvM"></Video>
       </section>
     </>),
