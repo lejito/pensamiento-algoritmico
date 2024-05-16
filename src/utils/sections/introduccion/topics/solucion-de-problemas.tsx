@@ -98,7 +98,7 @@ export const solucionDeProblemas: Topic = {
         </p>
 
         <Image
-          src="/Ciclo-solucion-de-problemas.png"
+          src="/Ciclo-solucion-de-problemas.svg"
           alt="Ciclo de solución de problemas"
           width={533}
           height={253}
@@ -106,7 +106,7 @@ export const solucionDeProblemas: Topic = {
         />
 
         <Image
-          src="/Ciclo-solucion-de-problemas_dark.png"
+          src="/Ciclo-solucion-de-problemas_dark.svg"
           alt="Ciclo de solución de problemas"
           width={533}
           height={253}
